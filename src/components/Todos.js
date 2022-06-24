@@ -1,14 +1,8 @@
 import Todo from "./Todo";
 
-const Todos = ({
-  todos,
-  setEditTodo,
-  handleComplete,
-  handleEdit,
-  handleDelete,
-}) => {
+const Todos = ({ todos, handleComplete, handleEdit, handleDelete }) => {
   return (
-    <div className="todo-app">
+    <div>
       {todos.map((todo) => (
         <Todo
           key={todo.id}

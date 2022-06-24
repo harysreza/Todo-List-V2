@@ -7,7 +7,7 @@ import {
 import { RiAddCircleLine } from "react-icons/ri";
 import { useEffect } from "react";
 
-const AddTodo = ({ input, setInput, editTodo, setEditTodo, handleSubmit }) => {
+const AddTodo = ({ input, setInput, editTodo, handleSubmit }) => {
   useEffect(() => {
     if (editTodo) {
       setInput(editTodo.text);
